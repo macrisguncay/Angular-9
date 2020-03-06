@@ -1,0 +1,31 @@
+.sprite {
+  transform: scale(1.6);
+  margin: 20px auto;
+}
+
+.card {
+  height: 250px;
+  margin: 13px;
+}
+
+.pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+
+  .pokemon {
+    width: 15%;
+    background: antiquewhite;
+    margin: 10px;
+  }
+
+  .button-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .double-button{
+    width: 50%;
+  }
+}
+

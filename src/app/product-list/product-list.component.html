@@ -1,0 +1,29 @@
+<h2>Products</h2>
+<div class = "pokemon-container">
+  <div *ngFor = "let product of products" class = "pokemon">
+      <div class= "card">
+        <a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
+          <div> {{product.name | uppercase}} </div>
+          <i [class]="'sprite sprite-' + product.id"></i>
+        </a>
+        <div>
+          <label>name:
+            <input [(ngModel)]="product.name" placeholder="Product name"/>
+          </label>
+        </div>
+      <div class = "button-container">
+        <div class = "double-button">
+          <button (click)="share()">
+            Share
+          </button>
+        </div>
+        <div class = "double-button">
+          <app-product-alerts
+            [product]="product"
+            (notify)="onNotify()">
+          </app-product-alerts>
+        </div>
+      </div>
+  </div>
+</div>
+

@@ -1,0 +1,7 @@
+{
+  "/api/*": {
+      "target": "https://ng-pokedex.firebaseapp.com",
+      "secure": false,
+      "changeOrigin": true
+  }
+}

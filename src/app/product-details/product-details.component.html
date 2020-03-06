@@ -1,0 +1,12 @@
+
+<h1>Product Details</h1>
+<div *ngIf="product">
+  <i [class]="'sprite sprite-' + product.id"></i>
+  <div><span>Name: </span>{{ product.name | uppercase }}</div>
+  <div><span>Id: </span>{{ product.id }}</div>
+  <h2>Size:</h2>
+  <div><span>Weight: </span>{{ product.weight }}</div>
+  <div><span>Height: </span>{{ product.height }}</div>
+  <h2>Description:</h2>
+  <p>{{ product.description }}</p>
+</div>
